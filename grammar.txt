@@ -1,0 +1,18 @@
+$filter = setuju | baik-baik | sebentar-sebentar | sebelum lebih jauh;
+$hari = SENIN | SELASA | RABU | KAMIS | JUMAT | SABTU | MINGGU;
+$andOr = ATAU | DAN;
+$not = TIDAK | NGGAK | BUKAN;
+$denganTidak = DENGAN | TANPA;
+$adalahYaitu = ADALAH | YAITU;
+$subject = ROHANIWAN | SAYA | KAMU | PEMIMPIN | BELIAU | DIA | BAPAK | IBU | INI | ITU;
+$predikat = INGIN | HARAP | MELAKUKAN | MENYATAKAN | PENYIDIKAN | PENELITIAN | SELESAIKAN | DISKUSIKAN | MENEMUKAN | HARAP | KIRA;
+$object = 
+( SENT-START (
+	( $filter | 
+		( 
+		$subject | 
+		$predikat |
+		$object
+		)
+	)
+) SENT-END)
