@@ -1,0 +1,1 @@
+data/train/wav/A24LMM058J001.wav	data/train/mfcc/A24LMM058J001.mfcc
